@@ -32,14 +32,3 @@ application {
     // Define the main class for the application.
     mainClassName = 'leetcode.demos.App'
 }
-
-distZip {
-    from project(':docs').asciidoctor, {
-        into "${project.name}-${version}"
-    }
-}
-distTar {
-    from project(':docs').asciidoctor, {
-        into "${project.name}-${version}"
-    }
-}

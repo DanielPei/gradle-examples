@@ -3,12 +3,18 @@
  */
 package leetcode.demos;
 
+import leetcode.demos.hard.MediumOfTwoSortedArrays;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
+
+        MediumOfTwoSortedArrays motsa = new MediumOfTwoSortedArrays();
+        motsa.mediumOfTwoSortedArrays(new int[]{1, 3, 5}, new int[]{2, 4, 6});
+
         System.out.println(new App().getGreeting());
     }
 }
